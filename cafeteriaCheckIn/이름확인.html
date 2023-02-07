@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/css/rem.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/cafeteriaCheckin.css" />
+    <script type="text/javascript" src="/javascript/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/javascript/cafeteriaCheckIn.js"></script>
+    <title>케이옥션 구내식당 체크인</title>
+</head>
+<body>
+    <div id="wrap">
+        <div id="container" class="login">
+            <div>
+                <form>
+                    <fieldset>
+                        <h3><img src="/image/k_auction.png" alt="케이옥션"></h3>
+                        <h2>런치오더 체크인</h2>
+                        <span>2023-02-20 (월)</span>
+                    </fieldset>
+                    <div>
+                        <input type="text" placeholder="이름을 입력하세요">
+                        <button type="button">체크인</button>
+                    </div>
+                </form>
+                <div class="noti">
+                    <ul>
+                        <li>
+                            <span>런치매너1<i><img src="/image/icon_notice.png"></i></span>
+                            <p>내가 신청한 식단이 아닌 다른 식단을 이용하시면 다른분이 못드실 수 있어요<i></i></p>
+                        </li>
+                        <li style="display:none">
+                            <span>런치매너2<i><img src="/image/icon_notice.png"></i></span>
+                            <p>내가 신청한 식단이 아닌 다른 식단을 이용하시면 다른분이 못드실 수 있어요<i></i></p>
+                        </li>
+                        <li style="display:none">
+                            <span>런치매너3<i><img src="/image/icon_notice.png"></i></span>
+                            <p>내가 신청한 식단이 아닌 다른 식단을 이용하시면 다른분이 못드실 수 있어요<i></i></p>
+                        </li>
+                    </ul>
+                    <div class="tab">
+                        <a href="#" class="on">&nbsp;</a>
+                        <a href="#">&nbsp;</a>
+                        <a href="#">&nbsp;</a>
+                    </div>
+                </div>
+                <a href="#" class="orangeBorder">주간 메뉴표 확인</a>
+                <span class="inquiry">문의사항 : 전략기획팀</span>
+            </div>
+        </div>
+        <!--LayerPop-->
+        <div class="layerPopWrap">
+            <div class="layerPopData">
+                <!--이름확인-->
+                <div>
+                    <i><img src="/image/icon_check.png"></i>
+                    <span class="text"><b class="userName">홍길동</b>이름을 알맞게 입력했나요?</span>
+                    <div class="btns">
+                        <a href="#" class="cancel">취소</a>
+                        <a href="#" class="ok">확인</a>
+                    </div>
+                </div>
+                <!--//이름확인-->
+            </div>
+        </div>
+        <!--//LayerPop-->
+    </div>
+</body>
+</html>

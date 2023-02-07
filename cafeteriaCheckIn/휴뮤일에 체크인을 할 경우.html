@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/css/rem.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/cafeteriaCheckin.css" />
+    <script type="text/javascript" src="/javascript/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/javascript/cafeteriaCheckIn.js"></script>
+    <title>케이옥션 구내식당 체크인</title>
+</head>
+<body>
+    <div id="wrap">
+        <div id="container" class="login">
+            <div>
+                <form>
+                    <fieldset>
+                        <h3><img src="/image/k_auction.png" alt="케이옥션"></h3>
+                        <h2>런치오더 체크인</h2>
+                        <span>2023-02-20 (월)</span>
+                    </fieldset>
+                    <div>
+                        <input type="text" placeholder="이름을 입력하세요">
+                        <button type="button">체크인</button>
+                    </div>
+                </form>
+                <ul class="noti">
+                    <li>
+                        <span>알립니다<i><img src="/image/icon_notice.png"></i></span>
+                        <p>늦은 식사를 하는 동료들을 위해 정량을 먹을 수 있을 만큼만 담아주세요</p>
+                    </li>
+                    <!-- <li>
+                        <span>알립니다<i><img src="/image/icon_notice.png"></i></span>
+                        <p>늦은 식사를 하는 동료들을 위해 정량을 먹을 수 있을 만큼만 담아주세요</p>
+                    </li>
+                    <li>
+                        <span>알립니다<i><img src="/image/icon_notice.png"></i></span>
+                        <p>늦은 식사를 하는 동료들을 위해 정량을 먹을 수 있을 만큼만 담아주세요</p>
+                    </li> -->
+                </ul>
+                
+                <a href="#" class="menuConfirm">주간 메뉴표 확인</a>
+                <span class="inquiry">문의사항 : 전략기획팀</span>
+            </div>
+        </div>
+        <!--LayerPop-->
+        <div class="layerPopWrap ">
+            <div class="layerPopData">
+                <!--이미 체크인을 한 경우-->
+                <div>
+                    <i><img src="/image/icon_rest.png"></i>
+                    <span class="text otTxt">오늘은 쉽니다~</span>
+                    <div class="btns">
+                        <a href="#" class="close">닫기</a>
+                    </div>
+                </div>
+                <!--//이미 체크인을 한 경우-->
+            </div>
+        </div>
+        <!--//LayerPop-->
+    </div>
+</body>
+</html>

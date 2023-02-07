@@ -1,0 +1,291 @@
+#container{
+    max-width:390px;
+    width:100%;
+    margin:auto;
+    background: url(../image/bg_top_right.png)no-repeat right top, url(../image/bg_bottom_left.png)no-repeat left bottom;
+    /* background-size:cover; */
+    padding:119px 0 51px;
+}
+#container .orangeBorder{
+    padding:0 15px;
+    display: inline-block;
+    line-height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #F89569;
+    border-radius: 100px;
+    margin: auto;
+    color: #252525;
+    margin-top: 58px;
+    text-align: center;
+}
+#container .inquiry{
+    font-size: 12px;
+    color: #868686;
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+}
+/*로그인*/
+
+.login > div{
+    max-width:330px;
+    width:100%;
+    border-radius: 20px;
+    padding:14px 15px;
+    text-align:center;
+    margin:auto;
+}
+.login form{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, #FFFFFF 12.04%, #FFFFFF 88.08%, rgba(255, 255, 255, 0.9) 100%);
+    box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.05), inset 1px 2px 4px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+    padding:75px 22px 60px;
+}
+.login form fieldset h2{
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 36px;
+    margin-top: 6px;
+}
+.login form fieldset span{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #868686;
+    display: block;
+    margin-top:19px
+}
+.login form div{
+    margin-top:60px
+}
+.login form input{
+    background: rgba(255, 255, 255, 0.8);
+    border: 1.10811px solid #F76E33;
+    border-radius: 6px;
+    height:44px;
+    padding: 0 14px;
+    width:100%;
+    font-size: 16px;
+}
+.login form input::placeholder{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: -0.02em;
+    color: #C1C1C1;
+}
+.login form button{
+    height: 44px;
+    background: #F76E33;
+    border-radius: 6px;
+    border:none;
+    width:100%;
+    color:#fff;
+    margin-top:15px;
+    font-size:16px;
+}
+.login .noti{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15), inset -1px -1px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    height:100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0 20px;
+    text-align: left;
+    margin-top:20px
+}
+.login .noti span{
+    color:#3D9FBD;
+    font-size:16px;
+}
+.login .noti p{
+    position:relative;
+    font-size:16px;
+    letter-spacing: -0.04em;
+}
+.login .noti p::after{
+    content:'';
+    position:absolute;
+    left:0;
+    top:4px;
+    width: 132px;
+    height: 11.77px;
+    background: #3D9FBD;
+    opacity: 0.2;
+    border-radius: 2.04651px;
+}
+.login .noti .tab{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-top:6px;
+}
+.login .noti .tab a{
+    width: 12px;
+    height: 4px;
+    left: 297px;
+    top: 603px;
+    background: #D9D9D9;
+    border-radius: 2px;
+    margin-right:3px;
+}
+.login .noti .tab a.on{
+    background: #3D9FBD;
+}
+.login .noti .tab a:last-child{
+    margin-right:0
+}
+.layerPopWrap{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.4);
+}
+.layerPopWrap .layerPopData{
+    position:absolute;
+    left:50%;
+    top:50%;transform:translate(-50%,-50%);
+    width:270px;
+    background:#fff;
+    padding-top:22px;
+    text-align:center;
+    border-radius: 12px;
+}
+.layerPopWrap .text{
+    display: block;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+    margin-top:11px;
+}
+.layerPopWrap .text .uesrName{
+    font-weight: 700;
+}
+.layerPopWrap .btns{
+    margin-top:20px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.layerPopWrap .btns a{
+    width:50%;
+    line-height:48px;
+    font-weight: 500;
+}
+.layerPopWrap .btns a.cancel{
+    background: linear-gradient(0deg, #EAEAEA, #EAEAEA), #D7D7D7;
+    border-bottom-left-radius: 12px;
+    
+}
+.layerPopWrap .btns a.ok{
+    background: linear-gradient(0deg, #F76E33, #F76E33), #F44E05;
+    color:#fff;
+    border-bottom-right-radius: 12px;
+}
+/*팝업 > 등록되지않은경우*/
+.layerPopWrap .otTxt{
+    display: block;
+    margin-top: 7px
+}
+.layerPopWrap .btns .close{
+    display: block;
+    width:100%;
+    background: linear-gradient(0deg, #EAEAEA, #EAEAEA), #D7D7D7;
+    border-radius: 0 0 12px 12px;
+}
+/*주간메뉴표확인*/
+.menuConfirmPop.layerPopData{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+/*결과*/
+.result > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.result .checkComplete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    color: #F76E33;
+    transform: translateY(80px);
+    opacity: 0;
+    transition: all 0.3s;
+}
+.result .checkComplete img{
+    margin-bottom:12px;
+}
+.result .menuInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.result .menuInfo .menuName{
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 35px;
+    text-align: center;
+    color: #333333;
+    margin-top:10px;
+}
+.result .lunchMent{
+    background:#fff;
+    width: 300px;
+    height: 187px;
+    box-shadow: 0px 4px 4px rgba(37, 37, 37, 0.15);
+    border-radius: 20px;
+    padding: 21px 15px;
+    margin-top:45px;
+}
+.result .lunchMent li{
+    background:#fff;
+    border-bottom: 1px solid #C1C1C1;
+    line-height:28px;
+    text-align: center;
+    font-size: 18px;
+    color: #6A6A6A;
+}
+.result .orangeBorder img{
+    margin-right:8px;
+    vertical-align: baseline;
+}
+
+@media all and (max-width:390px){
+    #container{
+        padding: 30.6vw 0 13.1vw;
+    }
+    .login form{
+        padding:19.24vw 5.65vw 15.4vw;
+    }
+    .login form fieldset h3 img{
+        width: 28.8vw;
+    }
+    .login form fieldset h2{
+        font-size: 7.2vw;
+    }
+    .login form div{
+        margin-top:15.4vw;
+    }
+    
+}
+
+
+
+
+
+
